@@ -1,0 +1,42 @@
+*{
+  margin:0;
+  padding:0;
+}
+
+html, body{
+  background-color: #efefef;
+}
+.Header{
+
+  height:20vh;
+  width:100vw;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+
+
+}
+
+.Header > h1 {
+
+  color: black;
+  text-align: center;
+  font-size: 3rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-bottom: solid 5px black;
+
+}
+
+.wrap-cards{
+
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap:5rem;
+  
+
+
+}
+
+

@@ -1,0 +1,101 @@
+$fontStyle : 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+.Card-Pokemon{
+    border-radius: 15px;
+    width:25vw;
+    height:25vh;
+    background-color:white;
+    display:flex;
+    flex-direction: column;
+    font-family: $fontStyle;
+    overflow: hidden;
+}
+
+.wrap-content-global{
+    display:flex;
+    box-sizing: border-box;
+    height:100%;
+    width:100%;
+    flex-direction: column;
+    padding: 0 1rem 1rem 1rem;
+
+}
+
+.wrap-ImageDesc{
+
+    height:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+
+    & .Card-pic{
+    height:100%;
+    margin:0 auto;
+        
+        img{
+            height:100%;
+            object-fit: contain;
+            max-width: 100%;
+        }
+    }
+
+    .Card-name{
+        text-align: left;
+        font-size: 1rem;
+    }
+
+    .Card-rate{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+       
+    
+        .Left{
+            display:flex;
+            flex-direction: row;
+            align-items: center;
+            gap:0.5rem;
+
+        }
+
+        
+
+    
+}
+
+}
+
+.Card-Separator{
+    height:0%;
+    width:70%;
+    margin:0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-top: 5px solid rgb(175, 166, 166);
+    cursor: pointer;
+}
+
+.Card-Separator:hover{
+    animation : bouge 0.5s ;
+
+}
+
+
+@keyframes bouge {
+
+    0% { transform:rotate(0deg);}
+
+    25% { transform:rotate(5deg);}
+
+    50% { transform:rotate(0deg);}
+
+    75% { transform:rotate(5deg);}
+
+    100% { transform:rotate(0deg);}
+
+    
+    
+}
+

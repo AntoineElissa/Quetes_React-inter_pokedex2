@@ -1,0 +1,109 @@
+
+/* Animation */
+@keyframes descente {
+    from {
+        transform: translateY(50%);
+    }
+    
+    to {
+        transform: translateY(0%);
+    }
+    }
+
+
+.wrap-attacks{
+    height:27vh;
+    // box-sizing: border-box;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    overflow:auto;
+    gap:1rem;
+    animation : descente 0.8s ease-out forwards ;
+
+    
+     
+
+    .Card-desc{
+        display:flex;
+        flex-direction: column;
+            h2{ font-size: 1.2rem;}
+
+            .Card-desc-text{
+               margin-top: 8px;
+                text-align: center;
+                
+            }
+    }
+
+    
+
+    .Card-atouts{
+        display:flex;
+        width:80%;
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        border-radius: 5px;
+        height:12%;
+        justify-content: space-around;
+        background-color: rgb(207, 145, 145);
+        color:white;
+        
+    }
+    
+    
+    .Card-attacks{
+        display:flex;
+        flex-direction: column;
+        gap:15px;
+        align-items: center;
+        height:10vh;
+        overflow:auto;
+    
+
+
+        .attacks{
+            display:flex;
+            flex-direction: column;
+            width:80%;
+            gap:10px;
+            border-radius: 10px;
+            background: rgb(238, 226, 226);
+            color:black;
+            
+
+
+            .attacks-number{
+                width:100%;
+                // border-bottom: 2px dashed grey;
+                background-color: rgb(92, 91, 90);
+                text-align: center;
+                margin:auto;
+                margin-bottom:15px;
+                border-radius:10px 10px 0 0px;
+                color:white;
+            }
+
+            .attacks-type{
+                display:flex;
+                flex-direction: row;
+                justify-content: space-between;
+                padding-left:15px;
+                padding-right:15px;
+            }
+
+            .attacks-desc{
+                font-style: italic;
+                text-align: justify;
+                padding-left:15px;
+                padding-right:15px;
+                padding-bottom:15px;
+            }             
+        
+        }
+    }
+
+
+}
